@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    height:100vh;
+}
+
+.container{
+    display:flex;
+    height:100vh;
+}
+
+
+.left{
+    width:30%;
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:relative;
+}
+
+
+.left::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.4);
+}
+
+
+.company-name{
+    position:relative;
+    color:white;
+    font-size:48px;
+    font-weight:bold;
+    letter-spacing:2px;
+}
+
+
+.right{
+    width:70%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#ffffff;
+}
+
+.login-box{
+    width:320px;
+}
+
+.login-box h2{
+    margin-bottom:20px;
+}
+
+.input-group{
+    margin-bottom:15px;
+}
+
+.input-group input{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    width:100%;
+    padding:10px;
+    background:#007bff;
+    color:white;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#0056b3;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+    
+    <div class="left">
+        <div class="company-name">
+            <h1>TechFlow</h1>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="login-box">
+            <h2>Login</h2>
+
+            <div class="input-group">
+                <input type="text" placeholder="Username">
+            </div>
+
+            <div class="input-group">
+                <input type="password" placeholder="Password">
+            </div>
+
+            <button>Sign In</button>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
